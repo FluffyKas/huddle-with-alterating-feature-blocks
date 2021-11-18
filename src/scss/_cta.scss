@@ -1,0 +1,49 @@
+@use "variables" as *;
+
+.cta {
+  position: relative;
+  padding: 5rem 0;
+}
+
+.cta-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 2px 0 15px 0 hsla(192, 100%, 9%, 0.1);
+  max-width: 50rem;
+  padding: 3rem 1rem;
+  text-align: center;
+  width: 90%;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX( -50%);
+  z-index: 10;
+}
+
+.cta-title {
+  font-size: clamp(1.1rem,4vw,2rem);
+  padding-bottom: 1.65rem;
+  @media(min-width: 68rem) {
+    padding-bottom: 2.5rem;
+  }
+}
+
+.cta-btn {
+  all: unset;
+  background: $primary-clr-pink;
+  border-radius: 35px;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(.7rem, 3vw, 1.2rem);
+  font-weight: 700;
+  padding: .85rem 3.5rem;
+  transition: all .2s ease;
+
+  @media(min-width: 62rem) {
+    padding: 1.5rem 6rem;
+  }
+}
+
+.cta-btn:hover {
+  opacity: .8;
+}

@@ -1,0 +1,139 @@
+@use "variables" as *;
+
+//GENERAL STYLES
+
+header {
+  background: url("/images/bg-hero-mobile.svg"), $neutral-clr-cyan-100;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1.5rem;
+
+  @media(min-width: 70rem) {
+    background: url("/images/bg-hero-desktop.svg"), $neutral-clr-cyan-100;
+    padding: 3rem 5rem;
+  }
+}
+
+//"NAVBAR"
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+.nav-logo {
+  display: block;
+  width: clamp(110px, 13vw, 300px);
+}
+
+.nav-btn {
+  all: unset;
+  background: white;
+  border-radius: 35px;
+  box-shadow: 2px 0 15px 0  hsla(192, 100%, 9%,.15);
+  color: $neutral-clr-cyan-900;
+  cursor: pointer;
+  font-size: .7rem;
+  font-weight: 700;
+  padding: .35rem 1.5rem;
+  transform: scale(1);
+  transition: all .2s ease-in-out;
+
+  @media(min-width: 66rem) {
+    font-size: .9rem;
+    padding: 1rem 4rem;
+  }
+}
+
+.nav-btn:hover {
+  transform: scale(1.05);
+}
+
+//HERO SECTION
+
+.hero {
+  padding-top: 4rem;
+  margin: 0 auto;
+  max-width: 85rem;
+  text-align: center;
+
+  @media(min-width: 74rem) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+  }
+}
+
+.hero-body {
+  margin: 0 auto;
+  max-width: 33.5rem;
+}
+
+.hero-body__title {
+  color: $neutral-clr-cyan-900;
+  font-family: $ff-heading;
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
+}
+
+.hero-body__text {
+  color: $neutral-clr-cyan-900;
+  font-size: clamp(1.05rem, 2vw, 1.15rem);
+  line-height: 1.6;
+  padding: 1.5rem .25rem 2rem .25rem;
+}
+
+.hero-body__btn {
+  all: unset;
+  background: $primary-clr-pink;
+  border-radius: 35px;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(.8rem, 2vw, .95rem);
+  font-weight: 700;
+  padding: .7rem 3.75rem;
+  transform: scale(1);
+  transition: all .2s ease-in-out;
+
+  @media(min-width: 60rem) {
+    padding: 1.2rem 4.5rem;
+  }
+}
+
+.hero-body__btn:hover {
+  transform: scale(1.05);
+}
+
+.hero-img-holder {
+  padding: 3.25rem 1rem;
+}
+
+.hero-img-holder img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  @media(min-width: 86rem) {
+    width: 46rem;
+  }
+}
+
+.btn:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 4px dotted $neutral-clr-grayblue;
+}
+
+.btn:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do s  upport :focus-visible */
+  outline: none;
+}
+
+.btn:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline:  4px dotted $neutral-clr-grayblue;
+}

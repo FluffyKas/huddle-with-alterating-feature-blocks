@@ -1,0 +1,193 @@
+@use "variables" as *;
+
+//FOOTER GENERAL STYLES
+
+footer {
+  background: $neutral-clr-cyan-900;
+  color: $neutral-clr-cyan-100;
+  padding-top: 13.5rem;
+}
+
+.footer-outer-wrapper {
+  max-width: 100rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media(min-width: 68rem) {
+    margin: 0 auto;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.wrapper-left {
+  @media(min-width: 68rem) {
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+  }
+}
+
+.wrapper-right {
+  @media(min-width: 68rem) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+  }
+}
+
+//FOOTER LOGO
+
+.footer-logo img {
+  width: 160px;
+  @media(min-width: 68rem) {
+    width: 220px;
+  }
+}
+
+//CONTACT INFO
+
+.contact {
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 30rem;
+  line-height: 1.6;
+  @media(min-width: 68rem) {
+    margin-top: 0;
+    max-width: 60%;
+  }
+}
+
+.contact li {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.location.location {  // added class name twice to increase specificity
+  align-items: flex-start;
+
+  img {
+    padding-top: .4rem;
+  }
+}
+
+//FOOTER MENU
+
+.footer-links {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 1.5rem;
+  font-size: 1.05rem;
+  list-style: none;
+  padding-bottom: 1.5rem;
+  width: 35%;
+}
+
+.footer-links li a,
+.footer-links li a:active {
+  color: $neutral-clr-cyan-100;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.footer-links li a:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted $primary-clr-pink;
+}
+
+.footer-links li a:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do s  upport :focus-visible */
+  outline: none;
+}
+
+.footer-links li a:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline:  3px dotted $primary-clr-pink;
+}
+
+//SOCIAL MEDIA
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: .85rem;
+  list-style: none;
+  padding-top: 2rem;
+  @media(min-width: 68rem) {
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+
+}
+
+.social-media li a,
+.social-media li a:active {
+  border: 1px solid $neutral-clr-cyan-100;
+  border-radius: 50%;
+  color: $neutral-clr-cyan-100;
+  cursor: pointer;
+  padding: .3rem;
+  transition: all .2s ease;
+  @media(min-width: 68rem) {
+    padding: .5rem;
+  }
+}
+
+.social-media li a:hover {
+  border: 1px solid $primary-clr-pink;
+  color: $primary-clr-pink;
+}
+
+.social-media li a:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted $primary-clr-pink;
+}
+
+.social-media li a:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do s  upport :focus-visible */
+  outline: none;
+}
+
+.social-media li a:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline:  3px dotted $primary-clr-pink;
+}
+
+
+.fa-facebook-f {
+  padding: .4rem .35rem;
+}
+
+.fa-twitter {
+  padding: .4rem .2rem;
+}
+
+.fa-instagram {
+  padding: .4rem .25rem;
+}
+
+//COPYRIGHT
+
+.copyright {
+  display: block;
+  padding: 1.5rem 0 3rem 0;
+  font-size: .8rem;
+  text-align: center;
+
+  @media(min-width: 68rem) {
+    text-align: left;
+  }
+}
