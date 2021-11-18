@@ -148,7 +148,7 @@ nav {
   box-shadow: 2px 0 25px 0 rgba(145, 145, 145, 0.2);
   color: #00252e;
   margin-bottom: 2.5rem;
-  padding: 3rem;
+  padding: 3rem 2rem;
   text-align: center;
 }
 @media (min-width: 45rem) {
@@ -191,14 +191,14 @@ nav {
 
 .feature-body__title {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(1rem, 6vw, 1.8rem);
+  font-size: clamp(1.1rem, 7vw, 1.8rem);
   padding-top: 3rem;
   padding-bottom: 1rem;
 }
 
 .feature-body__text {
   line-height: 1.5;
-  font-size: clamp(0.9rem, 6vw, 1.1rem);
+  font-size: clamp(0.8rem, 4vw, 1.1rem);
   opacity: 0.6;
 }
 @media (min-width: 60rem) {
