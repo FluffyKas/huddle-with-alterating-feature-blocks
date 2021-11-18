@@ -28,7 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](screenshots/huddle-mobile-view.png)
+![](screenshots/huddle-desktop-view.png)
 
 
 ### Links
@@ -52,6 +53,7 @@ Users should be able to:
 
 ### Continued development
 
+Planning to add animations
 
 ### Useful resources
 
